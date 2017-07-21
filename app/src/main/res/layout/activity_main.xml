@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:gravity="right"
+    tools:context=".MainActivity"
+    android:weightSum="1">
+
+    <Switch
+        android:id="@+id/studyswitch"
+        android:layout_width="69dp"
+        android:layout_height="78dp"
+        android:background="@drawable/motivationon"
+        android:checked="false"
+        tools:checked="false" />
+
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="match_parent"
+        android:layout_height="30pt"
+        android:layout_margin="10dp"
+        android:text="Start"
+        android:textSize="20sp" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/activity1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:cardBackgroundColor="@android:color/holo_orange_dark"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp">
+
+        <TextView
+            android:id="@+id/timer1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Sample"
+            android:textAlignment="center"
+            android:textColor="?android:attr/detailsElementBackground"
+            android:textSize="60sp"
+            android:shadowColor="#888"
+            android:shadowDx="1.5"
+            android:shadowDy="1.5"
+            android:shadowRadius="1.5"
+        />
+
+        <TextView
+            android:id="@+id/actTitle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  復習"
+            android:textSize="36sp"
+            />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/activity2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:cardBackgroundColor="@android:color/holo_blue_dark"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp">
+
+        <TextView
+            android:id="@+id/actTitle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  学習"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/timer2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textAlignment="center"
+            android:textColor="?android:attr/detailsElementBackground"
+            android:textSize="60sp"
+            android:shadowColor="#888"
+            android:shadowDx="1.5"
+            android:shadowDy="1.5"
+            android:shadowRadius="1.5"/>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/activity3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:cardBackgroundColor="@android:color/holo_green_light"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp">
+
+        <TextView
+            android:id="@+id/actTitle3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  演習"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/timer3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textAlignment="center"
+            android:textColor="?android:attr/detailsElementBackground"
+            android:textSize="60sp"
+            android:shadowColor="#888"
+            android:shadowDx="1.5"
+            android:shadowDy="1.5"
+            android:shadowRadius="1.5"/>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/activity4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:cardBackgroundColor="@android:color/holo_red_light"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
+
+        <TextView
+            android:id="@+id/actTitle4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  まとめ"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/timer4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textAlignment="center"
+            android:textColor="?android:attr/detailsElementBackground"
+            android:textSize="60sp"
+            android:shadowColor="#888"
+            android:shadowDx="1.5"
+            android:shadowDy="1.5"
+            android:shadowRadius="1.5"/>
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/brightnessView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="-1"
+        android:textSize="36sp" />
+
+</LinearLayout>
